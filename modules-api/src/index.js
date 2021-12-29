@@ -1,7 +1,7 @@
 const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
-const { buildSubgraphSchema } = require("@apollo/federation");
+const { buildSubgraphSchema } = require('@apollo/federation');
 
 const ModulesAPI = require('./datasources/modules-api');
 

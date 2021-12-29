@@ -42,7 +42,7 @@ const typeDefs = gql`
     "The number of times a track has been viewed"
     numberOfViews: Int
     "The track's complete array of Modules"
-    modules: [Module!]! @provides(fields: "id")  @provides(fields: "length") @provides(fields: "title")
+    modules: [Module!]!
   }
 
   "Author of a complete Track or a Module"
@@ -56,8 +56,6 @@ const typeDefs = gql`
 
   extend type Module @key (fields: "id")  {
     id: ID! @external
-    title: String @external
-    length: Int @external
   }
 `;
 

@@ -37,7 +37,7 @@ const resolvers = {
     },
 
     modules: ({ modules } ) => {
-      return modules.map(moduleId => ({ __typename: "Module", id: moduleId }));
+      return modules.map(moduleId => ({ __typename: 'Module', id: moduleId }));
     },
   },
 };

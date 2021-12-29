@@ -1,5 +1,6 @@
 const { ApolloServer } = require('apollo-server');
 const { ApolloGateway } = require('@apollo/gateway');
+
 let gateway;
 
 try {
@@ -21,6 +22,9 @@ try {
     });
 
     server.listen().then(({ url }) => {
-        console.log(`🚀 Server ready at ${url}`);
+        console.log(`
+        🚀  Modules server is running!
+        🔉  Listening at ${url}
+    `);
     });
 })();
