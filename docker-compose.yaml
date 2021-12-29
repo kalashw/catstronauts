@@ -1,13 +1,9 @@
 services:
   tracks-api:
     build: ./tracks-api
-    ports:
-      - 4001:4001
     command: "node src/index.js"
   modules-api:
     build: ./modules-api
-    ports:
-      - 4002:4002
     command: "node src/index.js"
   gateway-api:
     build: ./gateway-api

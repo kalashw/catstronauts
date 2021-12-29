@@ -23,8 +23,8 @@ try {
 
     server.listen().then(({ url }) => {
         console.log(`
-        🚀  Modules server is running!
-        🔉  Listening at ${url}
+    🚀  Modules server is running!
+    🔉  Listening at ${url}
     `);
     });
 })();
