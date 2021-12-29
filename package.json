@@ -1,0 +1,12 @@
+{
+  "name": "catstronauts",
+  "version": "1.0.0",
+  "scripts": {
+    "ui": "npm -C ./client run start",
+    "api": "docker-compose up",
+    "api-down": "docker-compose down",
+    "api-det": "docker-compose up -d",
+    "start": "npm run api-det && npm run ui"
+  },
+  "author": "Vlad Kalashnyk"
+}
